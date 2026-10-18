@@ -16,10 +16,10 @@
           "tieredEventPriceUsd": 0.0008
         },
         "GOLD": {
-          "tieredEventPriceUsd": 0.00065
+          "tieredEventPriceUsd": 0.00045
         },
         "PLATINUM": {
-          "tieredEventPriceUsd": 0.00055
+          "tieredEventPriceUsd": 0.00045
         },
         "DIAMOND": {
           "tieredEventPriceUsd": 0.00045
