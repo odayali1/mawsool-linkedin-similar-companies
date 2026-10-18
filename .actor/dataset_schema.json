@@ -1,0 +1,84 @@
+{
+  "actorSpecification": 1,
+  "title": "Find Similar LinkedIn Companies",
+  "description": "One result row. A URL is charged once even when it produces several rows.",
+  "fields": {
+    "type": "object",
+    "properties": {
+      "inputUrl": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "inputUrl"
+      },
+      "companyName": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "companyName"
+      },
+      "similarCount": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "title": "similarCount"
+      },
+      "similarName": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "similarName"
+      },
+      "similarUrl": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "similarUrl"
+      },
+      "subtitle": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "subtitle"
+      },
+      "location": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "title": "location"
+      },
+      "success": {
+        "type": "boolean",
+        "title": "success"
+      }
+    }
+  },
+  "views": {
+    "flat": {
+      "title": "Flat results",
+      "transformation": {
+        "fields": [
+          "inputUrl",
+          "companyName",
+          "similarCount",
+          "similarName",
+          "similarUrl",
+          "subtitle",
+          "location",
+          "success"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "title": "LinkedIn Similar Companies | Lookalikes",
+  "type": "object",
+  "schemaVersion": 1,
+  "description": "Find similar LinkedIn companies from one company URL. Each lookalike includes the name, short description, location, and LinkedIn URL. Useful for account lists and ABM. Starting from $0.45 per 1,000 source companies.",
+  "properties": {
+    "urls": {
+      "title": "LinkedIn company URLs",
+      "type": "array",
+      "description": "Add linkedin.com/company/... URLs.",
+      "editor": "stringList",
+      "prefill": [
+        "https://www.linkedin.com/company/mawsool-%D9%85%D9%88%D8%B5%D9%88%D9%84"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "urlsCsv": {
+      "title": "Or paste CSV",
+      "type": "string",
+      "description": "A url column. One URL per row is also accepted.",
+      "editor": "textarea",
+      "prefill": "url\nhttps://www.linkedin.com/company/mawsool-%D9%85%D9%88%D8%B5%D9%88%D9%84"
+    },
+    "fileUrl": {
+      "title": "Or upload a CSV file",
+      "type": "string",
+      "description": "CSV with a url or linkedinUrl column.",
+      "editor": "fileupload"
+    },
+    "maxUrls": {
+      "title": "Maximum URLs",
+      "type": "integer",
+      "default": 100,
+      "minimum": 1,
+      "maximum": 50000,
+      "description": "Cost-control cap. Maximum 50,000. A list over 200 continues if the run stops."
+    },
+    "concurrency": {
+      "title": "Concurrent requests",
+      "type": "integer",
+      "description": "How many URLs to look up at the same time.",
+      "default": 10,
+      "minimum": 1,
+      "maximum": 40
+    },
+    "resumeId": {
+      "title": "Resume ID (optional)",
+      "type": "string",
+      "description": "Reuse this ID to skip URLs that already succeeded.",
+      "editor": "textfield"
+    },
+    "freshStart": {
+      "title": "Look up finished URLs again",
+      "type": "boolean",
+      "description": "Turn this on to ignore saved progress and look up the whole list again.",
+      "default": false
+    }
+  }
+}

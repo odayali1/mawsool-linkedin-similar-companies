@@ -1,0 +1,30 @@
+{
+  "actorSpecification": 1,
+  "events": {
+    "similar-companies": {
+      "title": "Similar companies",
+      "description": "One LinkedIn URL processed. Extra result rows from that URL are included.",
+      "isPrimaryEvent": true,
+      "eventTieredPricingUsd": {
+        "FREE": {
+          "tieredEventPriceUsd": 0.001
+        },
+        "BRONZE": {
+          "tieredEventPriceUsd": 0.0009
+        },
+        "SILVER": {
+          "tieredEventPriceUsd": 0.0008
+        },
+        "GOLD": {
+          "tieredEventPriceUsd": 0.00065
+        },
+        "PLATINUM": {
+          "tieredEventPriceUsd": 0.00055
+        },
+        "DIAMOND": {
+          "tieredEventPriceUsd": 0.00045
+        }
+      }
+    }
+  }
+}
