@@ -1,0 +1,26 @@
+# LinkedIn Similar Companies
+
+> Send one LinkedIn company URL. You get lookalike companies: name, description, location, and URL.
+
+Mawsool publishes this as an Apify Actor. Starting from $0.45 per 1,000 source companies.
+
+## Run
+
+- Apify Actor: https://apify.com/oday/mawsool-linkedin-similar-companies
+- Call: `oday/mawsool-linkedin-similar-companies`
+- API key: https://mawsool.tech/ and https://docs.mawsool.tech/
+- Contact: osama@mawsool.tech, info@mawsool.tech
+
+## Use it when
+
+You have a customer and you want companies that resemble them.
+
+## Use something else when
+
+You already have the lookalike URLs and you need firmographics. Use Firmographics or Company Details.
+
+## Page
+
+- Find companies similar to a LinkedIn company: docs/similar-linkedin-companies.md
+
+Mawsool is not affiliated with LinkedIn.
